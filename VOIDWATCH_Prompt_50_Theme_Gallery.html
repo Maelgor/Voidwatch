@@ -1,0 +1,717 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VOIDWATCH Prompt Theme Gallery - 50 Themes</title>
+<style>
+  :root {
+    color-scheme: dark;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: #000;
+    color: #ddd;
+    font-family: Consolas, "Courier New", monospace;
+  }
+  .top {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: rgba(0,0,0,.96);
+    border-bottom: 1px solid #222;
+    padding: 16px 20px 14px;
+  }
+  h1 {
+    font: 600 20px/1.2 system-ui, sans-serif;
+    margin: 0 0 7px;
+    color: #f1f1f1;
+  }
+  .intro {
+    font: 13px/1.5 system-ui, sans-serif;
+    color: #aaa;
+    max-width: 1050px;
+  }
+  .toolbar {
+    margin-top: 12px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  input {
+    background: #0d0d0d;
+    color: #eee;
+    border: 1px solid #333;
+    border-radius: 5px;
+    padding: 8px 10px;
+    width: 260px;
+  }
+  .grid {
+    padding: 18px 20px 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(530px, 1fr));
+    gap: 12px;
+  }
+  .card {
+    border: 1px solid #222;
+    background: #070707;
+    border-radius: 6px;
+    padding: 12px;
+  }
+  .card:hover {
+    border-color: #444;
+  }
+  .card-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 8px;
+  }
+  .theme-name {
+    font: 600 13px/1.2 system-ui, sans-serif;
+    color: #e6e6e6;
+  }
+  button {
+    background: #111;
+    color: #aaa;
+    border: 1px solid #333;
+    border-radius: 4px;
+    padding: 4px 8px;
+    cursor: pointer;
+    font: 11px system-ui, sans-serif;
+  }
+  button:hover {
+    color: #fff;
+    border-color: #555;
+  }
+  .prompt {
+    display: inline-block;
+    white-space: pre;
+    font: 14px/1.42 Consolas, "Courier New", monospace;
+    padding: 1px 0 1px 0;
+    min-width: 560px;
+  }
+  .meta {
+    margin-top: 8px;
+    color: #666;
+    font-size: 10px;
+    line-height: 1.4;
+    overflow-wrap: anywhere;
+  }
+  .family {
+    grid-column: 1 / -1;
+    color: #888;
+    font: 600 12px/1 system-ui, sans-serif;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    margin-top: 10px;
+    border-bottom: 1px solid #191919;
+    padding-bottom: 7px;
+  }
+  @media (max-width: 620px) {
+    .grid { grid-template-columns: 1fr; padding: 12px; }
+    .prompt { min-width: 0; font-size: 11px; }
+    .top { padding: 12px; }
+  }
+</style>
+</head>
+<body>
+<div class="top">
+  <h1>VOIDWATCH Prompt Theme Gallery - 50 Themes</h1>
+  <div class="intro">
+    Black page background to approximate your Mudlet console. Each sample uses the current console prompt layout with the route removed.
+    Pick a number, or tell me something like "17 but darker", "use 24's background with 13's text", or "make 41 slightly greener."
+  </div>
+  <div class="toolbar">
+    <input id="search" placeholder="Filter by number or name..." oninput="filterCards()">
+    <span style="font:12px system-ui,sans-serif;color:#666;">Tip: view at 100% browser zoom first.</span>
+  </div>
+</div>
+
+<div class="grid" id="grid">
+  <div class="family">Slate / Graphite / Blue - 01 to 10</div>
+  
+    <article class="card" data-name="01 obsidian slate">
+      <div class="card-head">
+        <div class="theme-name">01 Obsidian Slate</div>
+        <button onclick='copyTheme("{\"background\": \"#15181d\", \"time\": \"#6f7782\", \"health\": \"#74d68a\", \"mana\": \"#68d4e8\", \"age\": \"#ba79e8\", \"readiness\": \"#e8c85a\", \"separator\": \"#454b55\", \"neutral\": \"#d6d9de\", \"parry\": \"#68d4e8\"}", this)'>Copy colors</button>
+      </div>
+      <div class="prompt" style="background:#15181d;"><span style="color:#6f7782">02:24:47</span><span style="color:#454b55"> | </span><span style="color:#74d68a">H:5745 100%</span><span style="color:#d6d9de"> </span><span style="color:#68d4e8">M:4060 100%</span><span style="color:#ba79e8"> A:0</span><span style="color:#454b55"> | </span><span style="color:#d6d9de">[</span><span style="color:#e8c85a">E</span><span style="color:#454b55">|</span><span style="color:#e8c85a">B</span><span style="color:#454b55">|</span><span style="color:#e8c85a">W</span><span style="color:#d6d9de">]</span><span style="color:#454b55"> | </span><span style="color:#68d4e8">PARRY: RL</span><span style="color:#d6d9de">  </span></div>
+      <div class="meta">
+        BG #15181d &nbsp; Time #6f7782 &nbsp; HP #74d68a &nbsp; MP #68d4e8 &nbsp; Age #ba79e8 &nbsp; Ready #e8c85a
+      </div>
+    </article>
+    
+    <article class="card" data-name="02 deep graphite">
+      <div class="card-head">
+        <div class="theme-name">02 Deep Graphite</div>
+        <button onclick='copyTheme("{\"background\": \"#111317\", \"time\": \"#69717c\", \"health\": \"#82d99b\", \"mana\": \"#72cce0\", \"age\": \"#bc82df\", \"readiness\": \"#dfc76e\", \"separator\": \"#3f444c\", \"neutral\": \"#d1d4d8\", \"parry\": \"#72cce0\"}", this)'>Copy colors</button>
+      </div>
+      <div class="prompt" style="background:#111317;"><span style="color:#69717c">02:24:47</span><span style="color:#3f444c"> | </span><span style="color:#82d99b">H:5745 100%</span><span style="color:#d1d4d8"> </span><span style="color:#72cce0">M:4060 100%</span><span style="color:#bc82df"> A:0</span><span style="color:#3f444c"> | </span><span style="color:#d1d4d8">[</span><span style="color:#dfc76e">E</span><span style="color:#3f444c">|</span><span style="color:#dfc76e">B</span><span style="color:#3f444c">|</span><span style="color:#dfc76e">W</span><span style="color:#d1d4d8">]</span><span style="color:#3f444c"> | </span><span style="color:#72cce0">PARRY: RL</span><span style="color:#d1d4d8">  </span></div>
+      <div class="meta">
+        BG #111317 &nbsp; Time #69717c &nbsp; HP #82d99b &nbsp; MP #72cce0 &nbsp; Age #bc82df &nbsp; Ready #dfc76e
+      </div>
+    </article>
+    
+    <article class="card" data-name="03 gunmetal">
+      <div class="card-head">
+        <div class="theme-name">03 Gunmetal</div>
+        <button onclick='copyTheme("{\"background\": \"#1b1f24\", \"time\": \"#7b8490\", \"health\": \"#7bd993\", \"mana\": \"#72cfe3\", \"age\": \"#b887dd\", \"readiness\": \"#e5c85d\", \"separator\": \"#505761\", \"neutral\": \"#d9dce0\", \"parry\": \"#72cfe3\"}", this)'>Copy colors</button>
+      </div>
+      <div class="prompt" style="background:#1b1f24;"><span style="color:#7b8490">02:24:47</span><span style="color:#505761"> | </span><span style="color:#7bd993">H:5745 100%</span><span style="color:#d9dce0"> </span><span style="color:#72cfe3">M:4060 100%</span><span style="color:#b887dd"> A:0</span><span style="color:#505761"> | </span><span style="color:#d9dce0">[</span><span style="color:#e5c85d">E</span><span style="color:#505761">|</span><span style="color:#e5c85d">B</span><span style="color:#505761">|</span><span style="color:#e5c85d">W</span><span style="color:#d9dce0">]</span><span style="color:#505761"> | </span><span style="color:#72cfe3">PARRY: RL</span><span style="color:#d9dce0">  </span></div>
+      <div class="meta">
+        BG #1b1f24 &nbsp; Time #7b8490 &nbsp; HP #7bd993 &nbsp; MP #72cfe3 &nbsp; Age #b887dd &nbsp; Ready #e5c85d
+      </div>
+    </article>
+    
+    <article class="card" data-name="04 carbon blue">
+      <div class="card-head">
+        <div class="theme-name">04 Carbon Blue</div>
+        <button onclick='copyTheme("{\"background\": \"#121820\", \"time\": \"#68778a\", \"health\": \"#7bd69a\", \"mana\": \"#70cbea\", \"age\": \"#ad7ee8\", \"readiness\": \"#e4c565\", \"separator\": \"#3c4856\", \"neutral\": \"#d7dce3\", \"parry\": \"#70cbea\"}", this)'>Copy colors</button>
+      </div>
+      <div class="prompt" style="background:#121820;"><span style="color:#68778a">02:24:47</span><span style="color:#3c4856"> | </span><span style="color:#7bd69a">H:5745 100%</span><span style="color:#d7dce3"> </span><span style="color:#70cbea">M:4060 100%</span><span style="color:#ad7ee8"> A:0</span><span style="color:#3c4856"> | </span><span style="color:#d7dce3">[</span><span style="color:#e4c565">E</span><span style="color:#3c4856">|</span><span style="color:#e4c565">B</span><span style="color:#3c4856">|</span><span style="color:#e4c565">W</span><span style="color:#d7dce3">]</span><span style="color:#3c4856"> | </span><span style="color:#70cbea">PARRY: RL</span><span style="color:#d7dce3">  </span></div>
+      <div class="meta">
+        BG #121820 &nbsp; Time #68778a &nbsp; HP #7bd69a &nbsp; MP #70cbea &nbsp; Age #ad7ee8 &nbsp; Ready #e4c565
+      </div>
+    </article>
+    
+    <article class="card" data-name="05 midnight steel">
+      <div class="card-head">
+        <div class="theme-name">05 Midnight Steel</div>
+        <button onclick='copyTheme("{\"background\": \"#101722\", \"time\": \"#65758a\", \"health\": \"#7ed6a1\", \"mana\": \"#6fc9ec\", \"age\": \"#ab83e8\", \"readiness\": \"#e8c861\", \"separator\": \"#394658\", \"neutral\": \"#d7dce4\", \"parry\": \"#6fc9ec\"}", this)'>Copy colors</button>
+      </div>
+      <div class="prompt" style="background:#101722;"><span style="color:#65758a">02:24:47</span><span style="color:#394658"> | </span><span style="color:#7ed6a1">H:5745 100%</span><span style="color:#d7dce4"> </span><span style="color:#6fc9ec">M:4060 100%</span><span style="color:#ab83e8"> A:0</span><span style="color:#394658"> | </span><span style="color:#d7dce4">[</span><span style="color:#e8c861">E</span><span style="color:#394658">|</span><span style="color:#e8c861">B</span><span style="color:#394658">|</span><span style="color:#e8c861">W</span><span style="color:#d7dce4">]</span><span style="color:#394658"> | </span><span style="color:#6fc9ec">PARRY: RL</span><span style="color:#d7dce4">  </span></div>
+      <div class="meta">
+        BG #101722 &nbsp; Time #65758a &nbsp; HP #7ed6a1 &nbsp; MP #6fc9ec &nbsp; Age #ab83e8 &nbsp; Ready #e8c861
+      </div>
+    </article>
+    
+    <article class="card" data-name="06 deep navy">
+      <div class="card-head">
+        <div class="theme-name">06 Deep Navy</div>
+        <button onclick='copyTheme("{\"background\": \"#0d1522\", \"time\": \"#65728b\", \"health\": \"#75d99e\", \"mana\": \"#65c9f0\", \"age\": \"#9f80e5\", \"readiness\": \"#e7c95f\", \"separator\": \"#34445a\", \"neutral\": \"#d5dbe5\", \"parry\": \"#65c9f0\"}", this)'>Copy colors</button>
+      </div>
+      <div class="prompt" style="background:#0d1522;"><span style="color:#65728b">02:24:47</span><span style="color:#34445a"> | </span><span style="color:#75d99e">H:5745 100%</span><span style="color:#d5dbe5"> </span><span style="color:#65c9f0">M:4060 100%</span><span style="color:#9f80e5"> A:0</span><span style="color:#34445a"> | </span><span style="color:#d5dbe5">[</span><span style="color:#e7c95f">E</span><span style="color:#34445a">|</span><span style="color:#e7c95f">B</span><span style="color:#34445a">|</span><span style="color:#e7c95f">W</span><span style="color:#d5dbe5">]</span><span style="color:#34445a"> | </span><span style="color:#65c9f0">PARRY: RL</span><span style="color:#d5dbe5">  </span></div>
+      <div class="meta">
+        BG #0d1522 &nbsp; Time #65728b &nbsp; HP #75d99e &nbsp; MP #65c9f0 &nbsp; Age #9f80e5 &nbsp; Ready #e7c95f
+      </div>
+    </article>
+    
+    <article class="card" data-name="07 naval ink">
+      <div class="card-head">
+        <div class="theme-name">07 Naval Ink</div>
+        <button onclick='copyTheme("{\"background\": \"#0b1320\", \"time\": \"#5e6d83\", \"health\": \"#6fd49a\", \"mana\": \"#5fc7e9\", \"age\": \"#9d79df\", \"readiness\": \"#e0c061\", \"separator\": \"#303e52\", \"neutral\": \"#d0d7e1\", \"parry\": \"#5fc7e9\"}", this)'>Copy colors</button>
+      </div>
+      <div class="prompt" style="background:#0b1320;"><span style="color:#5e6d83">02:24:47</span><span style="color:#303e52"> | </span><span style="color:#6fd49a">H:5745 100%</span><span style="color:#d0d7e1"> </span><span style="color:#5fc7e9">M:4060 100%</span><span style="color:#9d79df"> A:0</span><span style="color:#303e52"> | </span><span style="color:#d0d7e1">[</span><span style="color:#e0c061">E</span><span style="color:#303e52">|</span><span style="color:#e0c061">B</span><span style="color:#303e52">|</span><span style="color:#e0c061">W</span><span style="color:#d0d7e1">]</span><span style="color:#303e52"> | </span><span style="color:#5fc7e9">PARRY: RL</span><span style="color:#d0d7e1">  </span></div>
+      <div class="meta">
+        BG #0b1320 &nbsp; Time #5e6d83 &nbsp; HP #6fd49a &nbsp; MP #5fc7e9 &nbsp; Age #9d79df &nbsp; Ready #e0c061
+      </div>
+    </article>
+    
+    <article class="card" data-name="08 blue black">
+      <div class="card-head">
+        <div class="theme-name">08 Blue Black</div>
+        <button onclick='copyTheme("{\"background\": \"#0a111b\", \"time\": \"#607085\", \"health\": \"#75d79d\", \"mana\": \"#62c9e8\", \"age\": \"#a77ee3\", \"readiness\": \"#e8c661\", \"separator\": \"#2f3d50\", \"neutral\": \"#d4dae2\", \"parry\": \"#62c9e8\"}", this)'>Copy colors</button>
+      </div>
+      <div class="prompt" style="background:#0a111b;"><span style="color:#607085">02:24:47</span><span style="color:#2f3d50"> | </span><span style="color:#75d79d">H:5745 100%</span><span style="color:#d4dae2"> </span><span style="color:#62c9e8">M:4060 100%</span><span style="color:#a77ee3"> A:0</span><span style="color:#2f3d50"> | </span><span style="color:#d4dae2">[</span><span style="color:#e8c661">E</span><span style="color:#2f3d50">|</span><span style="color:#e8c661">B</span><span style="color:#2f3d50">|</span><span style="color:#e8c661">W</span><span style="color:#d4dae2">]</span><span style="color:#2f3d50"> | </span><span style="color:#62c9e8">PARRY: RL</span><span style="color:#d4dae2">  </span></div>
+      <div class="meta">
+        BG #0a111b &nbsp; Time #607085 &nbsp; HP #75d79d &nbsp; MP #62c9e8 &nbsp; Age #a77ee3 &nbsp; Ready #e8c661
+      </div>
+    </article>
+    
+    <article class="card" data-name="09 storm blue">
+      <div class="card-head">
+        <div class="theme-name">09 Storm Blue</div>
+        <button onclick='copyTheme("{\"background\": \"#16202b\", \"time\": \"#76869a\", \"health\": \"#7fdaa1\", \"mana\": \"#70d0ec\", \"age\": \"#b084e2\", \"readiness\": \"#ebca67\", \"separator\": \"#4b5968\", \"neutral\": \"#dbe0e6\", \"parry\": \"#70d0ec\"}", this)'>Copy colors</button>
+      </div>
+      <div class="prompt" style="background:#16202b;"><span style="color:#76869a">02:24:47</span><span style="color:#4b5968"> | </span><span style="color:#7fdaa1">H:5745 100%</span><span style="color:#dbe0e6"> </span><span style="color:#70d0ec">M:4060 100%</span><span style="color:#b084e2"> A:0</span><span style="color:#4b5968"> | </span><span style="color:#dbe0e6">[</span><span style="color:#ebca67">E</span><span style="color:#4b5968">|</span><span style="color:#ebca67">B</span><span style="color:#4b5968">|</span><span style="color:#ebca67">W</span><span style="color:#dbe0e6">]</span><span style="color:#4b5968"> | </span><span style="color:#70d0ec">PARRY: RL</span><span style="color:#dbe0e6">  </span></div>
+      <div class="meta">
+        BG #16202b &nbsp; Time #76869a &nbsp; HP #7fdaa1 &nbsp; MP #70d0ec &nbsp; Age #b084e2 &nbsp; Ready #ebca67
+      </div>
+    </article>
+    
+    <article class="card" data-name="10 indigo ash">
+      <div class="card-head">
+        <div class="theme-name">10 Indigo Ash</div>
+        <button onclick='copyTheme("{\"background\": \"#171827\", \"time\": \"#77788e\", \"health\": \"#79d79c\", \"mana\": \"#70cbed\", \"age\": \"#b77ee8\", \"readiness\": \"#e5c565\", \"separator\": \"#4a4c61\", \"neutral\": \"#dadbe2\", \"parry\": \"#70cbed\"}", this)'>Copy colors</button>
+      </div>
+      <div class="prompt" style="background:#171827;"><span style="color:#77788e">02:24:47</span><span style="color:#4a4c61"> | </span><span style="color:#79d79c">H:5745 100%</span><span style="color:#dadbe2"> </span><span style="color:#70cbed">M:4060 100%</span><span style="color:#b77ee8"> A:0</span><span style="color:#4a4c61"> | </span><span style="color:#dadbe2">[</span><span style="color:#e5c565">E</span><span style="color:#4a4c61">|</span><span style="color:#e5c565">B</span><span style="color:#4a4c61">|</span><span style="color:#e5c565">W</span><span style="color:#dadbe2">]</span><span style="color:#4a4c61"> | </span><span style="color:#70cbed">PARRY: RL</span><span style="color:#dadbe2">  </span></div>
+      <div class="meta">
+        BG #171827 &nbsp; Time #77788e &nbsp; HP #79d79c &nbsp; MP #70cbed &nbsp; Age #b77ee8 &nbsp; Ready #e5c565
+      </div>
+    </article>
+    
+  <div class="family">Purple / Plum - 11 to 20</div>
+  
+    <article class="card" data-name="11 void purple">
+      <div class="card-head">
+        <div class="theme-name">11 Void Purple</div>
+        <button onclick='copyTheme("{\"background\": \"#18131f\", \"time\": \"#756d7f\", \"health\": \"#7ed99d\", \"mana\": \"#74cfe5\", \"age\": \"#c17be7\", \"readiness\": \"#e7c667\", \"separator\": \"#4d4357\", \"neutral\": \"#ddd8e1\", \"parry\": \"#74cfe5\"}", this)'>Copy colors</button>
+      </div>
+      <div class="prompt" style="background:#18131f;"><span style="color:#756d7f">02:24:47</span><span style="color:#4d4357"> | </span><span style="color:#7ed99d">H:5745 100%</span><span style="color:#ddd8e1"> </span><span style="color:#74cfe5">M:4060 100%</span><span style="color:#c17be7"> A:0</span><span style="color:#4d4357"> | </span><span style="color:#ddd8e1">[</span><span style="color:#e7c667">E</span><span style="color:#4d4357">|</span><span style="color:#e7c667">B</span><span style="color:#4d4357">|</span><span style="color:#e7c667">W</span><span style="color:#ddd8e1">]</span><span style="color:#4d4357"> | </span><span style="color:#74cfe5">PARRY: RL</span><span style="color:#ddd8e1">  </span></div>
+      <div class="meta">
+        BG #18131f &nbsp; Time #756d7f &nbsp; HP #7ed99d &nbsp; MP #74cfe5 &nbsp; Age #c17be7 &nbsp; Ready #e7c667
+      </div>
+    </article>
+    
+    <article class="card" data-name="12 plum smoke">
+      <div class="card-head">
+        <div class="theme-name">12 Plum Smoke</div>
+        <button onclick='copyTheme("{\"background\": \"#211723\", \"time\": \"#817385\", \"health\": \"#86d89d\", \"mana\": \"#79cfe1\", \"age\": \"#c47bd7\", \"readiness\": \"#e5c66c\", \"separator\": \"#5a475d\", \"neutral\": \"#dfd9e1\", \"parry\": \"#79cfe1\"}", this)'>Copy colors</button>
+      </div>
+      <div class="prompt" style="background:#211723;"><span style="color:#817385">02:24:47</span><span style="color:#5a475d"> | </span><span style="color:#86d89d">H:5745 100%</span><span style="color:#dfd9e1"> </span><span style="color:#79cfe1">M:4060 100%</span><span style="color:#c47bd7"> A:0</span><span style="color:#5a475d"> | </span><span style="color:#dfd9e1">[</span><span style="color:#e5c66c">E</span><span style="color:#5a475d">|</span><span style="color:#e5c66c">B</span><span style="color:#5a475d">|</span><span style="color:#e5c66c">W</span><span style="color:#dfd9e1">]</span><span style="color:#5a475d"> | </span><span style="color:#79cfe1">PARRY: RL</span><span style="color:#dfd9e1">  </span></div>
+      <div class="meta">
+        BG #211723 &nbsp; Time #817385 &nbsp; HP #86d89d &nbsp; MP #79cfe1 &nbsp; Age #c47bd7 &nbsp; Ready #e5c66c
+      </div>
+    </article>
+    
+    <article class="card" data-name="13 amethyst night">
+      <div class="card-head">
+        <div class="theme-name">13 Amethyst Night</div>
+        <button onclick='copyTheme("{\"background\": \"#1d1527\", \"time\": \"#7c7189\", \"health\": \"#7fd69d\", \"mana\": \"#70cce5\", \"age\": \"#c885ed\", \"readiness\": \"#e8c45f\", \"separator\": \"#55465f\", \"neutral\": \"#ded8e4\", \"parry\": \"#70cce5\"}", this)'>Copy colors</button>
+      </div>
+      <div class="prompt" style="background:#1d1527;"><span style="color:#7c7189">02:24:47</span><span style="color:#55465f"> | </span><span style="color:#7fd69d">H:5745 100%</span><span style="color:#ded8e4"> </span><span style="color:#70cce5">M:4060 100%</span><span style="color:#c885ed"> A:0</span><span style="color:#55465f"> | </span><span style="color:#ded8e4">[</span><span style="color:#e8c45f">E</span><span style="color:#55465f">|</span><span style="color:#e8c45f">B</span><span style="color:#55465f">|</span><span style="color:#e8c45f">W</span><span style="color:#ded8e4">]</span><span style="color:#55465f"> | </span><span style="color:#70cce5">PARRY: RL</span><span style="color:#ded8e4">  </span></div>
+      <div class="meta">
+        BG #1d1527 &nbsp; Time #7c7189 &nbsp; HP #7fd69d &nbsp; MP #70cce5 &nbsp; Age #c885ed &nbsp; Ready #e8c45f
+      </div>
+    </article>
+    
+    <article class="card" data-name="14 royal shadow">
+      <div class="card-head">
+        <div class="theme-name">14 Royal Shadow</div>
+        <button onclick='copyTheme("{\"background\": \"#18142a\", \"time\": \"#746e8b\", \"health\": \"#7bd79b\", \"mana\": \"#6fc8e8\", \"age\": \"#b984f3\", \"readiness\": \"#e8c55f\", \"separator\": \"#49445e\", \"neutral\": \"#d9d7e3\", \"parry\": \"#6fc8e8\"}", this)'>Copy colors</button>
+      </div>
+      <div class="prompt" style="background:#18142a;"><span style="color:#746e8b">02:24:47</span><span style="color:#49445e"> | </span><span style="color:#7bd79b">H:5745 100%</span><span style="color:#d9d7e3"> </span><span style="color:#6fc8e8">M:4060 100%</span><span style="color:#b984f3"> A:0</span><span style="color:#49445e"> | </span><span style="color:#d9d7e3">[</span><span style="color:#e8c55f">E</span><span style="color:#49445e">|</span><span style="color:#e8c55f">B</span><span style="color:#49445e">|</span><span style="color:#e8c55f">W</span><span style="color:#d9d7e3">]</span><span style="color:#49445e"> | </span><span style="color:#6fc8e8">PARRY: RL</span><span style="color:#d9d7e3">  </span></div>
+      <div class="meta">
+        BG #18142a &nbsp; Time #746e8b &nbsp; HP #7bd79b &nbsp; MP #6fc8e8 &nbsp; Age #b984f3 &nbsp; Ready #e8c55f
+      </div>
+    </article>
+    
+    <article class="card" data-name="15 violet charcoal">
+      <div class="card-head">
+        <div class="theme-name">15 Violet Charcoal</div>
+        <button onclick='copyTheme("{\"background\": \"#211d29\", \"time\": \"#837e8d\", \"health\": \"#86d9a4\", \"mana\": \"#78cfe5\", \"age\": \"#c18be7\", \"readiness\": \"#e6c86e\", \"separator\": \"#5a5662\", \"neutral\": \"#dfdce3\", \"parry\": \"#78cfe5\"}", this)'>Copy colors</button>
+      </div>
+      <div class="prompt" style="background:#211d29;"><span style="color:#837e8d">02:24:47</span><span style="color:#5a5662"> | </span><span style="color:#86d9a4">H:5745 100%</span><span style="color:#dfdce3"> </span><span style="color:#78cfe5">M:4060 100%</span><span style="color:#c18be7"> A:0</span><span style="color:#5a5662"> | </span><span style="color:#dfdce3">[</span><span style="color:#e6c86e">E</span><span style="color:#5a5662">|</span><span style="color:#e6c86e">B</span><span style="color:#5a5662">|</span><span style="color:#e6c86e">W</span><span style="color:#dfdce3">]</span><span style="color:#5a5662"> | </span><span style="color:#78cfe5">PARRY: RL</span><span style="color:#dfdce3">  </span></div>
+      <div class="meta">
+        BG #211d29 &nbsp; Time #837e8d &nbsp; HP #86d9a4 &nbsp; MP #78cfe5 &nbsp; Age #c18be7 &nbsp; Ready #e6c86e
+      </div>
+    </article>
+    
+    <article class="card" data-name="16 aubergine">
+      <div class="card-head">
+        <div class="theme-name">16 Aubergine</div>
+        <button onclick='copyTheme("{\"background\": \"#23151f\", \"time\": \"#86747f\", \"health\": \"#86d6a0\", \"mana\": \"#79c9df\", \"age\": \"#d080c6\", \"readiness\": \"#e6c56a\", \"separator\": \"#5d4454\", \"neutral\": \"#e1d9df\", \"parry\": \"#79c9df\"}", this)'>Copy colors</button>
+      </div>
+      <div class="prompt" style="background:#23151f;"><span style="color:#86747f">02:24:47</span><span style="color:#5d4454"> | </span><span style="color:#86d6a0">H:5745 100%</span><span style="color:#e1d9df"> </span><span style="color:#79c9df">M:4060 100%</span><span style="color:#d080c6"> A:0</span><span style="color:#5d4454"> | </span><span style="color:#e1d9df">[</span><span style="color:#e6c56a">E</span><span style="color:#5d4454">|</span><span style="color:#e6c56a">B</span><span style="color:#5d4454">|</span><span style="color:#e6c56a">W</span><span style="color:#e1d9df">]</span><span style="color:#5d4454"> | </span><span style="color:#79c9df">PARRY: RL</span><span style="color:#e1d9df">  </span></div>
+      <div class="meta">
+        BG #23151f &nbsp; Time #86747f &nbsp; HP #86d6a0 &nbsp; MP #79c9df &nbsp; Age #d080c6 &nbsp; Ready #e6c56a
+      </div>
+    </article>
+    
+    <article class="card" data-name="17 mauve black">
+      <div class="card-head">
+        <div class="theme-name">17 Mauve Black</div>
+        <button onclick='copyTheme("{\"background\": \"#1b161d\", \"time\": \"#7b727c\", \"health\": \"#84d59e\", \"mana\": \"#79c9dc\", \"age\": \"#c88ac8\", \"readiness\": \"#e3c36d\", \"separator\": \"#4d454f\", \"neutral\": \"#ddd8dc\", \"parry\": \"#79c9dc\"}", this)'>Copy colors</button>
+      </div>
+      <div class="prompt" style="background:#1b161d;"><span style="color:#7b727c">02:24:47</span><span style="color:#4d454f"> | </span><span style="color:#84d59e">H:5745 100%</span><span style="color:#ddd8dc"> </span><span style="color:#79c9dc">M:4060 100%</span><span style="color:#c88ac8"> A:0</span><span style="color:#4d454f"> | </span><span style="color:#ddd8dc">[</span><span style="color:#e3c36d">E</span><span style="color:#4d454f">|</span><span style="color:#e3c36d">B</span><span style="color:#4d454f">|</span><span style="color:#e3c36d">W</span><span style="color:#ddd8dc">]</span><span style="color:#4d454f"> | </span><span style="color:#79c9dc">PARRY: RL</span><span style="color:#ddd8dc">  </span></div>
+      <div class="meta">
+        BG #1b161d &nbsp; Time #7b727c &nbsp; HP #84d59e &nbsp; MP #79c9dc &nbsp; Age #c88ac8 &nbsp; Ready #e3c36d
+      </div>
+    </article>
+    
+    <article class="card" data-name="18 arcane purple">
+      <div class="card-head">
+        <div class="theme-name">18 Arcane Purple</div>
+        <button onclick='copyTheme("{\"background\": \"#151225\", \"time\": \"#6e6882\", \"health\": \"#7cd799\", \"mana\": \"#6dc9e8\", \"age\": \"#b878f1\", \"readiness\": \"#e8c35f\", \"separator\": \"#423b58\", \"neutral\": \"#d9d6e3\", \"parry\": \"#6dc9e8\"}", this)'>Copy colors</button>
+      </div>
+      <div class="prompt" style="background:#151225;"><span style="color:#6e6882">02:24:47</span><span style="color:#423b58"> | </span><span style="color:#7cd799">H:5745 100%</span><span style="color:#d9d6e3"> </span><span style="color:#6dc9e8">M:4060 100%</span><span style="color:#b878f1"> A:0</span><span style="color:#423b58"> | </span><span style="color:#d9d6e3">[</span><span style="color:#e8c35f">E</span><span style="color:#423b58">|</span><span style="color:#e8c35f">B</span><span style="color:#423b58">|</span><span style="color:#e8c35f">W</span><span style="color:#d9d6e3">]</span><span style="color:#423b58"> | </span><span style="color:#6dc9e8">PARRY: RL</span><span style="color:#d9d6e3">  </span></div>
+      <div class="meta">
+        BG #151225 &nbsp; Time #6e6882 &nbsp; HP #7cd799 &nbsp; MP #6dc9e8 &nbsp; Age #b878f1 &nbsp; Ready #e8c35f
+      </div>
+    </article>
+    
+    <article class="card" data-name="19 dusk orchid">
+      <div class="card-head">
+        <div class="theme-name">19 Dusk Orchid</div>
+        <button onclick='copyTheme("{\"background\": \"#251a28\", \"time\": \"#897a8c\", \"health\": \"#89d7a4\", \"mana\": \"#7bcde0\", \"age\": \"#d18bcd\", \"readiness\": \"#e8c76e\", \"separator\": \"#604d64\", \"neutral\": \"#e1dce2\", \"parry\": \"#7bcde0\"}", this)'>Copy colors</button>
+      </div>
+      <div class="prompt" style="background:#251a28;"><span style="color:#897a8c">02:24:47</span><span style="color:#604d64"> | </span><span style="color:#89d7a4">H:5745 100%</span><span style="color:#e1dce2"> </span><span style="color:#7bcde0">M:4060 100%</span><span style="color:#d18bcd"> A:0</span><span style="color:#604d64"> | </span><span style="color:#e1dce2">[</span><span style="color:#e8c76e">E</span><span style="color:#604d64">|</span><span style="color:#e8c76e">B</span><span style="color:#604d64">|</span><span style="color:#e8c76e">W</span><span style="color:#e1dce2">]</span><span style="color:#604d64"> | </span><span style="color:#7bcde0">PARRY: RL</span><span style="color:#e1dce2">  </span></div>
+      <div class="meta">
+        BG #251a28 &nbsp; Time #897a8c &nbsp; HP #89d7a4 &nbsp; MP #7bcde0 &nbsp; Age #d18bcd &nbsp; Ready #e8c76e
+      </div>
+    </article>
+    
+    <article class="card" data-name="20 shadow lilac">
+      <div class="card-head">
+        <div class="theme-name">20 Shadow Lilac</div>
+        <button onclick='copyTheme("{\"background\": \"#1c1822\", \"time\": \"#7f7785\", \"health\": \"#88d8a1\", \"mana\": \"#7ccde2\", \"age\": \"#c595df\", \"readiness\": \"#e5c76d\", \"separator\": \"#514b59\", \"neutral\": \"#dedae1\", \"parry\": \"#7ccde2\"}", this)'>Copy colors</button>
+      </div>
+      <div class="prompt" style="background:#1c1822;"><span style="color:#7f7785">02:24:47</span><span style="color:#514b59"> | </span><span style="color:#88d8a1">H:5745 100%</span><span style="color:#dedae1"> </span><span style="color:#7ccde2">M:4060 100%</span><span style="color:#c595df"> A:0</span><span style="color:#514b59"> | </span><span style="color:#dedae1">[</span><span style="color:#e5c76d">E</span><span style="color:#514b59">|</span><span style="color:#e5c76d">B</span><span style="color:#514b59">|</span><span style="color:#e5c76d">W</span><span style="color:#dedae1">]</span><span style="color:#514b59"> | </span><span style="color:#7ccde2">PARRY: RL</span><span style="color:#dedae1">  </span></div>
+      <div class="meta">
+        BG #1c1822 &nbsp; Time #7f7785 &nbsp; HP #88d8a1 &nbsp; MP #7ccde2 &nbsp; Age #c595df &nbsp; Ready #e5c76d
+      </div>
+    </article>
+    
+  <div class="family">Forest / Teal - 21 to 30</div>
+  
+    <article class="card" data-name="21 forest black">
+      <div class="card-head">
+        <div class="theme-name">21 Forest Black</div>
+        <button onclick='copyTheme("{\"background\": \"#101812\", \"time\": \"#617363\", \"health\": \"#79d389\", \"mana\": \"#72c9c4\", \"age\": \"#aa7fd6\", \"readiness\": \"#dfc55f\", \"separator\": \"#35483a\", \"neutral\": \"#d3dbd4\", \"parry\": \"#72c9c4\"}", this)'>Copy colors</button>
+      </div>
+      <div class="prompt" style="background:#101812;"><span style="color:#617363">02:24:47</span><span style="color:#35483a"> | </span><span style="color:#79d389">H:5745 100%</span><span style="color:#d3dbd4"> </span><span style="color:#72c9c4">M:4060 100%</span><span style="color:#aa7fd6"> A:0</span><span style="color:#35483a"> | </span><span style="color:#d3dbd4">[</span><span style="color:#dfc55f">E</span><span style="color:#35483a">|</span><span style="color:#dfc55f">B</span><span style="color:#35483a">|</span><span style="color:#dfc55f">W</span><span style="color:#d3dbd4">]</span><span style="color:#35483a"> | </span><span style="color:#72c9c4">PARRY: RL</span><span style="color:#d3dbd4">  </span></div>
+      <div class="meta">
+        BG #101812 &nbsp; Time #617363 &nbsp; HP #79d389 &nbsp; MP #72c9c4 &nbsp; Age #aa7fd6 &nbsp; Ready #dfc55f
+      </div>
+    </article>
+    
+    <article class="card" data-name="22 pine shadow">
+      <div class="card-head">
+        <div class="theme-name">22 Pine Shadow</div>
+        <button onclick='copyTheme("{\"background\": \"#111b16\", \"time\": \"#65786b\", \"health\": \"#75d58b\", \"mana\": \"#6ccbc4\", \"age\": \"#a881d8\", \"readiness\": \"#e1c363\", \"separator\": \"#384e40\", \"neutral\": \"#d2ddd5\", \"parry\": \"#6ccbc4\"}", this)'>Copy colors</button>
+      </div>
+      <div class="prompt" style="background:#111b16;"><span style="color:#65786b">02:24:47</span><span style="color:#384e40"> | </span><span style="color:#75d58b">H:5745 100%</span><span style="color:#d2ddd5"> </span><span style="color:#6ccbc4">M:4060 100%</span><span style="color:#a881d8"> A:0</span><span style="color:#384e40"> | </span><span style="color:#d2ddd5">[</span><span style="color:#e1c363">E</span><span style="color:#384e40">|</span><span style="color:#e1c363">B</span><span style="color:#384e40">|</span><span style="color:#e1c363">W</span><span style="color:#d2ddd5">]</span><span style="color:#384e40"> | </span><span style="color:#6ccbc4">PARRY: RL</span><span style="color:#d2ddd5">  </span></div>
+      <div class="meta">
+        BG #111b16 &nbsp; Time #65786b &nbsp; HP #75d58b &nbsp; MP #6ccbc4 &nbsp; Age #a881d8 &nbsp; Ready #e1c363
+      </div>
+    </article>
+    
+    <article class="card" data-name="23 deep moss">
+      <div class="card-head">
+        <div class="theme-name">23 Deep Moss</div>
+        <button onclick='copyTheme("{\"background\": \"#182018\", \"time\": \"#758177\", \"health\": \"#82d78e\", \"mana\": \"#77cbc2\", \"age\": \"#ae85d7\", \"readiness\": \"#dec66e\", \"separator\": \"#4b574c\", \"neutral\": \"#d9dfda\", \"parry\": \"#77cbc2\"}", this)'>Copy colors</button>
+      </div>
+      <div class="prompt" style="background:#182018;"><span style="color:#758177">02:24:47</span><span style="color:#4b574c"> | </span><span style="color:#82d78e">H:5745 100%</span><span style="color:#d9dfda"> </span><span style="color:#77cbc2">M:4060 100%</span><span style="color:#ae85d7"> A:0</span><span style="color:#4b574c"> | </span><span style="color:#d9dfda">[</span><span style="color:#dec66e">E</span><span style="color:#4b574c">|</span><span style="color:#dec66e">B</span><span style="color:#4b574c">|</span><span style="color:#dec66e">W</span><span style="color:#d9dfda">]</span><span style="color:#4b574c"> | </span><span style="color:#77cbc2">PARRY: RL</span><span style="color:#d9dfda">  </span></div>
+      <div class="meta">
+        BG #182018 &nbsp; Time #758177 &nbsp; HP #82d78e &nbsp; MP #77cbc2 &nbsp; Age #ae85d7 &nbsp; Ready #dec66e
+      </div>
+    </article>
+    
+    <article class="card" data-name="24 emerald ink">
+      <div class="card-head">
+        <div class="theme-name">24 Emerald Ink</div>
+        <button onclick='copyTheme("{\"background\": \"#0d1917\", \"time\": \"#607770\", \"health\": \"#71d69c\", \"mana\": \"#64d0ca\", \"age\": \"#9d82d9\", \"readiness\": \"#e5c764\", \"separator\": \"#314943\", \"neutral\": \"#d0dcd8\", \"parry\": \"#64d0ca\"}", this)'>Copy colors</button>
+      </div>
+      <div class="prompt" style="background:#0d1917;"><span style="color:#607770">02:24:47</span><span style="color:#314943"> | </span><span style="color:#71d69c">H:5745 100%</span><span style="color:#d0dcd8"> </span><span style="color:#64d0ca">M:4060 100%</span><span style="color:#9d82d9"> A:0</span><span style="color:#314943"> | </span><span style="color:#d0dcd8">[</span><span style="color:#e5c764">E</span><span style="color:#314943">|</span><span style="color:#e5c764">B</span><span style="color:#314943">|</span><span style="color:#e5c764">W</span><span style="color:#d0dcd8">]</span><span style="color:#314943"> | </span><span style="color:#64d0ca">PARRY: RL</span><span style="color:#d0dcd8">  </span></div>
+      <div class="meta">
+        BG #0d1917 &nbsp; Time #607770 &nbsp; HP #71d69c &nbsp; MP #64d0ca &nbsp; Age #9d82d9 &nbsp; Ready #e5c764
+      </div>
+    </article>
+    
+    <article class="card" data-name="25 night garden">
+      <div class="card-head">
+        <div class="theme-name">25 Night Garden</div>
+        <button onclick='copyTheme("{\"background\": \"#151c18\", \"time\": \"#6d7a70\", \"health\": \"#79d595\", \"mana\": \"#70ccc7\", \"age\": \"#a681da\", \"readiness\": \"#e0c66b\", \"separator\": \"#414e45\", \"neutral\": \"#d6ddd8\", \"parry\": \"#70ccc7\"}", this)'>Copy colors</button>
+      </div>
+      <div class="prompt" style="background:#151c18;"><span style="color:#6d7a70">02:24:47</span><span style="color:#414e45"> | </span><span style="color:#79d595">H:5745 100%</span><span style="color:#d6ddd8"> </span><span style="color:#70ccc7">M:4060 100%</span><span style="color:#a681da"> A:0</span><span style="color:#414e45"> | </span><span style="color:#d6ddd8">[</span><span style="color:#e0c66b">E</span><span style="color:#414e45">|</span><span style="color:#e0c66b">B</span><span style="color:#414e45">|</span><span style="color:#e0c66b">W</span><span style="color:#d6ddd8">]</span><span style="color:#414e45"> | </span><span style="color:#70ccc7">PARRY: RL</span><span style="color:#d6ddd8">  </span></div>
+      <div class="meta">
+        BG #151c18 &nbsp; Time #6d7a70 &nbsp; HP #79d595 &nbsp; MP #70ccc7 &nbsp; Age #a681da &nbsp; Ready #e0c66b
+      </div>
+    </article>
+    
+    <article class="card" data-name="26 teal forest">
+      <div class="card-head">
+        <div class="theme-name">26 Teal Forest</div>
+        <button onclick='copyTheme("{\"background\": \"#101b1d\", \"time\": \"#64787b\", \"health\": \"#75d89b\", \"mana\": \"#65d1d2\", \"age\": \"#9f84dc\", \"readiness\": \"#e5c76a\", \"separator\": \"#354d50\", \"neutral\": \"#d4dedf\", \"parry\": \"#65d1d2\"}", this)'>Copy colors</button>
+      </div>
+      <div class="prompt" style="background:#101b1d;"><span style="color:#64787b">02:24:47</span><span style="color:#354d50"> | </span><span style="color:#75d89b">H:5745 100%</span><span style="color:#d4dedf"> </span><span style="color:#65d1d2">M:4060 100%</span><span style="color:#9f84dc"> A:0</span><span style="color:#354d50"> | </span><span style="color:#d4dedf">[</span><span style="color:#e5c76a">E</span><span style="color:#354d50">|</span><span style="color:#e5c76a">B</span><span style="color:#354d50">|</span><span style="color:#e5c76a">W</span><span style="color:#d4dedf">]</span><span style="color:#354d50"> | </span><span style="color:#65d1d2">PARRY: RL</span><span style="color:#d4dedf">  </span></div>
+      <div class="meta">
+        BG #101b1d &nbsp; Time #64787b &nbsp; HP #75d89b &nbsp; MP #65d1d2 &nbsp; Age #9f84dc &nbsp; Ready #e5c76a
+      </div>
+    </article>
+    
+    <article class="card" data-name="27 dark cypress">
+      <div class="card-head">
+        <div class="theme-name">27 Dark Cypress</div>
+        <button onclick='copyTheme("{\"background\": \"#131b18\", \"time\": \"#697a70\", \"health\": \"#78d494\", \"mana\": \"#6ec9bf\", \"age\": \"#a681d5\", \"readiness\": \"#dfc465\", \"separator\": \"#3b4c45\", \"neutral\": \"#d6ddd9\", \"parry\": \"#6ec9bf\"}", this)'>Copy colors</button>
+      </div>
+      <div class="prompt" style="background:#131b18;"><span style="color:#697a70">02:24:47</span><span style="color:#3b4c45"> | </span><span style="color:#78d494">H:5745 100%</span><span style="color:#d6ddd9"> </span><span style="color:#6ec9bf">M:4060 100%</span><span style="color:#a681d5"> A:0</span><span style="color:#3b4c45"> | </span><span style="color:#d6ddd9">[</span><span style="color:#dfc465">E</span><span style="color:#3b4c45">|</span><span style="color:#dfc465">B</span><span style="color:#3b4c45">|</span><span style="color:#dfc465">W</span><span style="color:#d6ddd9">]</span><span style="color:#3b4c45"> | </span><span style="color:#6ec9bf">PARRY: RL</span><span style="color:#d6ddd9">  </span></div>
+      <div class="meta">
+        BG #131b18 &nbsp; Time #697a70 &nbsp; HP #78d494 &nbsp; MP #6ec9bf &nbsp; Age #a681d5 &nbsp; Ready #dfc465
+      </div>
+    </article>
+    
+    <article class="card" data-name="28 deep jade">
+      <div class="card-head">
+        <div class="theme-name">28 Deep Jade</div>
+        <button onclick='copyTheme("{\"background\": \"#0f1917\", \"time\": \"#61766f\", \"health\": \"#72d59b\", \"mana\": \"#68cfca\", \"age\": \"#9e83d9\", \"readiness\": \"#e2c766\", \"separator\": \"#344946\", \"neutral\": \"#d2dbd8\", \"parry\": \"#68cfca\"}", this)'>Copy colors</button>
+      </div>
+      <div class="prompt" style="background:#0f1917;"><span style="color:#61766f">02:24:47</span><span style="color:#344946"> | </span><span style="color:#72d59b">H:5745 100%</span><span style="color:#d2dbd8"> </span><span style="color:#68cfca">M:4060 100%</span><span style="color:#9e83d9"> A:0</span><span style="color:#344946"> | </span><span style="color:#d2dbd8">[</span><span style="color:#e2c766">E</span><span style="color:#344946">|</span><span style="color:#e2c766">B</span><span style="color:#344946">|</span><span style="color:#e2c766">W</span><span style="color:#d2dbd8">]</span><span style="color:#344946"> | </span><span style="color:#68cfca">PARRY: RL</span><span style="color:#d2dbd8">  </span></div>
+      <div class="meta">
+        BG #0f1917 &nbsp; Time #61766f &nbsp; HP #72d59b &nbsp; MP #68cfca &nbsp; Age #9e83d9 &nbsp; Ready #e2c766
+      </div>
+    </article>
+    
+    <article class="card" data-name="29 moss stone">
+      <div class="card-head">
+        <div class="theme-name">29 Moss Stone</div>
+        <button onclick='copyTheme("{\"background\": \"#1b201b\", \"time\": \"#7a827b\", \"health\": \"#85d790\", \"mana\": \"#79cbbf\", \"age\": \"#ae86d3\", \"readiness\": \"#dfc56f\", \"separator\": \"#505851\", \"neutral\": \"#dadedb\", \"parry\": \"#79cbbf\"}", this)'>Copy colors</button>
+      </div>
+      <div class="prompt" style="background:#1b201b;"><span style="color:#7a827b">02:24:47</span><span style="color:#505851"> | </span><span style="color:#85d790">H:5745 100%</span><span style="color:#dadedb"> </span><span style="color:#79cbbf">M:4060 100%</span><span style="color:#ae86d3"> A:0</span><span style="color:#505851"> | </span><span style="color:#dadedb">[</span><span style="color:#dfc56f">E</span><span style="color:#505851">|</span><span style="color:#dfc56f">B</span><span style="color:#505851">|</span><span style="color:#dfc56f">W</span><span style="color:#dadedb">]</span><span style="color:#505851"> | </span><span style="color:#79cbbf">PARRY: RL</span><span style="color:#dadedb">  </span></div>
+      <div class="meta">
+        BG #1b201b &nbsp; Time #7a827b &nbsp; HP #85d790 &nbsp; MP #79cbbf &nbsp; Age #ae86d3 &nbsp; Ready #dfc56f
+      </div>
+    </article>
+    
+    <article class="card" data-name="30 verdant night">
+      <div class="card-head">
+        <div class="theme-name">30 Verdant Night</div>
+        <button onclick='copyTheme("{\"background\": \"#121a14\", \"time\": \"#65756a\", \"health\": \"#76d58b\", \"mana\": \"#6fc8c0\", \"age\": \"#a47fd5\", \"readiness\": \"#e0c363\", \"separator\": \"#394b3d\", \"neutral\": \"#d2dcd4\", \"parry\": \"#6fc8c0\"}", this)'>Copy colors</button>
+      </div>
+      <div class="prompt" style="background:#121a14;"><span style="color:#65756a">02:24:47</span><span style="color:#394b3d"> | </span><span style="color:#76d58b">H:5745 100%</span><span style="color:#d2dcd4"> </span><span style="color:#6fc8c0">M:4060 100%</span><span style="color:#a47fd5"> A:0</span><span style="color:#394b3d"> | </span><span style="color:#d2dcd4">[</span><span style="color:#e0c363">E</span><span style="color:#394b3d">|</span><span style="color:#e0c363">B</span><span style="color:#394b3d">|</span><span style="color:#e0c363">W</span><span style="color:#d2dcd4">]</span><span style="color:#394b3d"> | </span><span style="color:#6fc8c0">PARRY: RL</span><span style="color:#d2dcd4">  </span></div>
+      <div class="meta">
+        BG #121a14 &nbsp; Time #65756a &nbsp; HP #76d58b &nbsp; MP #6fc8c0 &nbsp; Age #a47fd5 &nbsp; Ready #e0c363
+      </div>
+    </article>
+    
+  <div class="family">Bronze / Warm Neutral - 31 to 40</div>
+  
+    <article class="card" data-name="31 bronze black">
+      <div class="card-head">
+        <div class="theme-name">31 Bronze Black</div>
+        <button onclick='copyTheme("{\"background\": \"#1d1812\", \"time\": \"#807363\", \"health\": \"#82d59a\", \"mana\": \"#79c8d5\", \"age\": \"#b487cf\", \"readiness\": \"#e5bd63\", \"separator\": \"#584b3b\", \"neutral\": \"#ded8cf\", \"parry\": \"#79c8d5\"}", this)'>Copy colors</button>
+      </div>
+      <div class="prompt" style="background:#1d1812;"><span style="color:#807363">02:24:47</span><span style="color:#584b3b"> | </span><span style="color:#82d59a">H:5745 100%</span><span style="color:#ded8cf"> </span><span style="color:#79c8d5">M:4060 100%</span><span style="color:#b487cf"> A:0</span><span style="color:#584b3b"> | </span><span style="color:#ded8cf">[</span><span style="color:#e5bd63">E</span><span style="color:#584b3b">|</span><span style="color:#e5bd63">B</span><span style="color:#584b3b">|</span><span style="color:#e5bd63">W</span><span style="color:#ded8cf">]</span><span style="color:#584b3b"> | </span><span style="color:#79c8d5">PARRY: RL</span><span style="color:#ded8cf">  </span></div>
+      <div class="meta">
+        BG #1d1812 &nbsp; Time #807363 &nbsp; HP #82d59a &nbsp; MP #79c8d5 &nbsp; Age #b487cf &nbsp; Ready #e5bd63
+      </div>
+    </article>
+    
+    <article class="card" data-name="32 dark umber">
+      <div class="card-head">
+        <div class="theme-name">32 Dark Umber</div>
+        <button onclick='copyTheme("{\"background\": \"#211914\", \"time\": \"#857468\", \"health\": \"#88d6a0\", \"mana\": \"#7bc8d4\", \"age\": \"#bc88cb\", \"readiness\": \"#e4bb69\", \"separator\": \"#604a3e\", \"neutral\": \"#e0d8d2\", \"parry\": \"#7bc8d4\"}", this)'>Copy colors</button>
+      </div>
+      <div class="prompt" style="background:#211914;"><span style="color:#857468">02:24:47</span><span style="color:#604a3e"> | </span><span style="color:#88d6a0">H:5745 100%</span><span style="color:#e0d8d2"> </span><span style="color:#7bc8d4">M:4060 100%</span><span style="color:#bc88cb"> A:0</span><span style="color:#604a3e"> | </span><span style="color:#e0d8d2">[</span><span style="color:#e4bb69">E</span><span style="color:#604a3e">|</span><span style="color:#e4bb69">B</span><span style="color:#604a3e">|</span><span style="color:#e4bb69">W</span><span style="color:#e0d8d2">]</span><span style="color:#604a3e"> | </span><span style="color:#7bc8d4">PARRY: RL</span><span style="color:#e0d8d2">  </span></div>
+      <div class="meta">
+        BG #211914 &nbsp; Time #857468 &nbsp; HP #88d6a0 &nbsp; MP #7bc8d4 &nbsp; Age #bc88cb &nbsp; Ready #e4bb69
+      </div>
+    </article>
+    
+    <article class="card" data-name="33 burnished copper">
+      <div class="card-head">
+        <div class="theme-name">33 Burnished Copper</div>
+        <button onclick='copyTheme("{\"background\": \"#231815\", \"time\": \"#8b746a\", \"health\": \"#85d49e\", \"mana\": \"#79c7d0\", \"age\": \"#bb83c9\", \"readiness\": \"#e2b966\", \"separator\": \"#62473f\", \"neutral\": \"#e2d8d3\", \"parry\": \"#79c7d0\"}", this)'>Copy colors</button>
+      </div>
+      <div class="prompt" style="background:#231815;"><span style="color:#8b746a">02:24:47</span><span style="color:#62473f"> | </span><span style="color:#85d49e">H:5745 100%</span><span style="color:#e2d8d3"> </span><span style="color:#79c7d0">M:4060 100%</span><span style="color:#bb83c9"> A:0</span><span style="color:#62473f"> | </span><span style="color:#e2d8d3">[</span><span style="color:#e2b966">E</span><span style="color:#62473f">|</span><span style="color:#e2b966">B</span><span style="color:#62473f">|</span><span style="color:#e2b966">W</span><span style="color:#e2d8d3">]</span><span style="color:#62473f"> | </span><span style="color:#79c7d0">PARRY: RL</span><span style="color:#e2d8d3">  </span></div>
+      <div class="meta">
+        BG #231815 &nbsp; Time #8b746a &nbsp; HP #85d49e &nbsp; MP #79c7d0 &nbsp; Age #bb83c9 &nbsp; Ready #e2b966
+      </div>
+    </article>
+    
+    <article class="card" data-name="34 coffee steel">
+      <div class="card-head">
+        <div class="theme-name">34 Coffee Steel</div>
+        <button onclick='copyTheme("{\"background\": \"#1c1816\", \"time\": \"#7f746f\", \"health\": \"#84d59c\", \"mana\": \"#79cad2\", \"age\": \"#b488ce\", \"readiness\": \"#dfbd6c\", \"separator\": \"#544b47\", \"neutral\": \"#ddd8d5\", \"parry\": \"#79cad2\"}", this)'>Copy colors</button>
+      </div>
+      <div class="prompt" style="background:#1c1816;"><span style="color:#7f746f">02:24:47</span><span style="color:#544b47"> | </span><span style="color:#84d59c">H:5745 100%</span><span style="color:#ddd8d5"> </span><span style="color:#79cad2">M:4060 100%</span><span style="color:#b488ce"> A:0</span><span style="color:#544b47"> | </span><span style="color:#ddd8d5">[</span><span style="color:#dfbd6c">E</span><span style="color:#544b47">|</span><span style="color:#dfbd6c">B</span><span style="color:#544b47">|</span><span style="color:#dfbd6c">W</span><span style="color:#ddd8d5">]</span><span style="color:#544b47"> | </span><span style="color:#79cad2">PARRY: RL</span><span style="color:#ddd8d5">  </span></div>
+      <div class="meta">
+        BG #1c1816 &nbsp; Time #7f746f &nbsp; HP #84d59c &nbsp; MP #79cad2 &nbsp; Age #b488ce &nbsp; Ready #dfbd6c
+      </div>
+    </article>
+    
+    <article class="card" data-name="35 ember brown">
+      <div class="card-head">
+        <div class="theme-name">35 Ember Brown</div>
+        <button onclick='copyTheme("{\"background\": \"#241815\", \"time\": \"#89746b\", \"health\": \"#87d49c\", \"mana\": \"#7ac8d2\", \"age\": \"#bd84ca\", \"readiness\": \"#e5b861\", \"separator\": \"#65463e\", \"neutral\": \"#e1d7d2\", \"parry\": \"#7ac8d2\"}", this)'>Copy colors</button>
+      </div>
+      <div class="prompt" style="background:#241815;"><span style="color:#89746b">02:24:47</span><span style="color:#65463e"> | </span><span style="color:#87d49c">H:5745 100%</span><span style="color:#e1d7d2"> </span><span style="color:#7ac8d2">M:4060 100%</span><span style="color:#bd84ca"> A:0</span><span style="color:#65463e"> | </span><span style="color:#e1d7d2">[</span><span style="color:#e5b861">E</span><span style="color:#65463e">|</span><span style="color:#e5b861">B</span><span style="color:#65463e">|</span><span style="color:#e5b861">W</span><span style="color:#e1d7d2">]</span><span style="color:#65463e"> | </span><span style="color:#7ac8d2">PARRY: RL</span><span style="color:#e1d7d2">  </span></div>
+      <div class="meta">
+        BG #241815 &nbsp; Time #89746b &nbsp; HP #87d49c &nbsp; MP #7ac8d2 &nbsp; Age #bd84ca &nbsp; Ready #e5b861
+      </div>
+    </article>
+    
+    <article class="card" data-name="36 sepia night">
+      <div class="card-head">
+        <div class="theme-name">36 Sepia Night</div>
+        <button onclick='copyTheme("{\"background\": \"#1c1713\", \"time\": \"#7d7168\", \"health\": \"#83d39a\", \"mana\": \"#77c7d1\", \"age\": \"#b187c9\", \"readiness\": \"#ddba68\", \"separator\": \"#53483e\", \"neutral\": \"#dbd6d0\", \"parry\": \"#77c7d1\"}", this)'>Copy colors</button>
+      </div>
+      <div class="prompt" style="background:#1c1713;"><span style="color:#7d7168">02:24:47</span><span style="color:#53483e"> | </span><span style="color:#83d39a">H:5745 100%</span><span style="color:#dbd6d0"> </span><span style="color:#77c7d1">M:4060 100%</span><span style="color:#b187c9"> A:0</span><span style="color:#53483e"> | </span><span style="color:#dbd6d0">[</span><span style="color:#ddba68">E</span><span style="color:#53483e">|</span><span style="color:#ddba68">B</span><span style="color:#53483e">|</span><span style="color:#ddba68">W</span><span style="color:#dbd6d0">]</span><span style="color:#53483e"> | </span><span style="color:#77c7d1">PARRY: RL</span><span style="color:#dbd6d0">  </span></div>
+      <div class="meta">
+        BG #1c1713 &nbsp; Time #7d7168 &nbsp; HP #83d39a &nbsp; MP #77c7d1 &nbsp; Age #b187c9 &nbsp; Ready #ddba68
+      </div>
+    </article>
+    
+    <article class="card" data-name="37 warm graphite">
+      <div class="card-head">
+        <div class="theme-name">37 Warm Graphite</div>
+        <button onclick='copyTheme("{\"background\": \"#1d1a18\", \"time\": \"#817973\", \"health\": \"#85d39c\", \"mana\": \"#7ac8d2\", \"age\": \"#b68ace\", \"readiness\": \"#dfbd6c\", \"separator\": \"#56514d\", \"neutral\": \"#ddd9d6\", \"parry\": \"#7ac8d2\"}", this)'>Copy colors</button>
+      </div>
+      <div class="prompt" style="background:#1d1a18;"><span style="color:#817973">02:24:47</span><span style="color:#56514d"> | </span><span style="color:#85d39c">H:5745 100%</span><span style="color:#ddd9d6"> </span><span style="color:#7ac8d2">M:4060 100%</span><span style="color:#b68ace"> A:0</span><span style="color:#56514d"> | </span><span style="color:#ddd9d6">[</span><span style="color:#dfbd6c">E</span><span style="color:#56514d">|</span><span style="color:#dfbd6c">B</span><span style="color:#56514d">|</span><span style="color:#dfbd6c">W</span><span style="color:#ddd9d6">]</span><span style="color:#56514d"> | </span><span style="color:#7ac8d2">PARRY: RL</span><span style="color:#ddd9d6">  </span></div>
+      <div class="meta">
+        BG #1d1a18 &nbsp; Time #817973 &nbsp; HP #85d39c &nbsp; MP #7ac8d2 &nbsp; Age #b68ace &nbsp; Ready #dfbd6c
+      </div>
+    </article>
+    
+    <article class="card" data-name="38 dark sandstone">
+      <div class="card-head">
+        <div class="theme-name">38 Dark Sandstone</div>
+        <button onclick='copyTheme("{\"background\": \"#221c17\", \"time\": \"#897b70\", \"health\": \"#87d49e\", \"mana\": \"#7bc8d0\", \"age\": \"#b98bd0\", \"readiness\": \"#e3bf70\", \"separator\": \"#60544a\", \"neutral\": \"#e0d9d3\", \"parry\": \"#7bc8d0\"}", this)'>Copy colors</button>
+      </div>
+      <div class="prompt" style="background:#221c17;"><span style="color:#897b70">02:24:47</span><span style="color:#60544a"> | </span><span style="color:#87d49e">H:5745 100%</span><span style="color:#e0d9d3"> </span><span style="color:#7bc8d0">M:4060 100%</span><span style="color:#b98bd0"> A:0</span><span style="color:#60544a"> | </span><span style="color:#e0d9d3">[</span><span style="color:#e3bf70">E</span><span style="color:#60544a">|</span><span style="color:#e3bf70">B</span><span style="color:#60544a">|</span><span style="color:#e3bf70">W</span><span style="color:#e0d9d3">]</span><span style="color:#60544a"> | </span><span style="color:#7bc8d0">PARRY: RL</span><span style="color:#e0d9d3">  </span></div>
+      <div class="meta">
+        BG #221c17 &nbsp; Time #897b70 &nbsp; HP #87d49e &nbsp; MP #7bc8d0 &nbsp; Age #b98bd0 &nbsp; Ready #e3bf70
+      </div>
+    </article>
+    
+    <article class="card" data-name="39 brass shadow">
+      <div class="card-head">
+        <div class="theme-name">39 Brass Shadow</div>
+        <button onclick='copyTheme("{\"background\": \"#1f1a13\", \"time\": \"#857968\", \"health\": \"#84d49b\", \"mana\": \"#79c8d1\", \"age\": \"#b389ca\", \"readiness\": \"#e3c15e\", \"separator\": \"#5b513d\", \"neutral\": \"#ded9cf\", \"parry\": \"#79c8d1\"}", this)'>Copy colors</button>
+      </div>
+      <div class="prompt" style="background:#1f1a13;"><span style="color:#857968">02:24:47</span><span style="color:#5b513d"> | </span><span style="color:#84d49b">H:5745 100%</span><span style="color:#ded9cf"> </span><span style="color:#79c8d1">M:4060 100%</span><span style="color:#b389ca"> A:0</span><span style="color:#5b513d"> | </span><span style="color:#ded9cf">[</span><span style="color:#e3c15e">E</span><span style="color:#5b513d">|</span><span style="color:#e3c15e">B</span><span style="color:#5b513d">|</span><span style="color:#e3c15e">W</span><span style="color:#ded9cf">]</span><span style="color:#5b513d"> | </span><span style="color:#79c8d1">PARRY: RL</span><span style="color:#ded9cf">  </span></div>
+      <div class="meta">
+        BG #1f1a13 &nbsp; Time #857968 &nbsp; HP #84d49b &nbsp; MP #79c8d1 &nbsp; Age #b389ca &nbsp; Ready #e3c15e
+      </div>
+    </article>
+    
+    <article class="card" data-name="40 old gold ink">
+      <div class="card-head">
+        <div class="theme-name">40 Old Gold Ink</div>
+        <button onclick='copyTheme("{\"background\": \"#191713\", \"time\": \"#787267\", \"health\": \"#82d39a\", \"mana\": \"#77c6cf\", \"age\": \"#af86c8\", \"readiness\": \"#dcbc65\", \"separator\": \"#4c483e\", \"neutral\": \"#d9d6cf\", \"parry\": \"#77c6cf\"}", this)'>Copy colors</button>
+      </div>
+      <div class="prompt" style="background:#191713;"><span style="color:#787267">02:24:47</span><span style="color:#4c483e"> | </span><span style="color:#82d39a">H:5745 100%</span><span style="color:#d9d6cf"> </span><span style="color:#77c6cf">M:4060 100%</span><span style="color:#af86c8"> A:0</span><span style="color:#4c483e"> | </span><span style="color:#d9d6cf">[</span><span style="color:#dcbc65">E</span><span style="color:#4c483e">|</span><span style="color:#dcbc65">B</span><span style="color:#4c483e">|</span><span style="color:#dcbc65">W</span><span style="color:#d9d6cf">]</span><span style="color:#4c483e"> | </span><span style="color:#77c6cf">PARRY: RL</span><span style="color:#d9d6cf">  </span></div>
+      <div class="meta">
+        BG #191713 &nbsp; Time #787267 &nbsp; HP #82d39a &nbsp; MP #77c6cf &nbsp; Age #af86c8 &nbsp; Ready #dcbc65
+      </div>
+    </article>
+    
+  <div class="family">Ink / Minimal / Signature - 41 to 50</div>
+  
+    <article class="card" data-name="41 pure ink">
+      <div class="card-head">
+        <div class="theme-name">41 Pure Ink</div>
+        <button onclick='copyTheme("{\"background\": \"#090b0e\", \"time\": \"#59616b\", \"health\": \"#72cf8a\", \"mana\": \"#63c8df\", \"age\": \"#a674d2\", \"readiness\": \"#d9ba58\", \"separator\": \"#2c3138\", \"neutral\": \"#cbd0d5\", \"parry\": \"#63c8df\"}", this)'>Copy colors</button>
+      </div>
+      <div class="prompt" style="background:#090b0e;"><span style="color:#59616b">02:24:47</span><span style="color:#2c3138"> | </span><span style="color:#72cf8a">H:5745 100%</span><span style="color:#cbd0d5"> </span><span style="color:#63c8df">M:4060 100%</span><span style="color:#a674d2"> A:0</span><span style="color:#2c3138"> | </span><span style="color:#cbd0d5">[</span><span style="color:#d9ba58">E</span><span style="color:#2c3138">|</span><span style="color:#d9ba58">B</span><span style="color:#2c3138">|</span><span style="color:#d9ba58">W</span><span style="color:#cbd0d5">]</span><span style="color:#2c3138"> | </span><span style="color:#63c8df">PARRY: RL</span><span style="color:#cbd0d5">  </span></div>
+      <div class="meta">
+        BG #090b0e &nbsp; Time #59616b &nbsp; HP #72cf8a &nbsp; MP #63c8df &nbsp; Age #a674d2 &nbsp; Ready #d9ba58
+      </div>
+    </article>
+    
+    <article class="card" data-name="42 soft ink">
+      <div class="card-head">
+        <div class="theme-name">42 Soft Ink</div>
+        <button onclick='copyTheme("{\"background\": \"#0d0f12\", \"time\": \"#606771\", \"health\": \"#78d090\", \"mana\": \"#69c9de\", \"age\": \"#aa79d2\", \"readiness\": \"#dbbd5e\", \"separator\": \"#31363d\", \"neutral\": \"#ced2d6\", \"parry\": \"#69c9de\"}", this)'>Copy colors</button>
+      </div>
+      <div class="prompt" style="background:#0d0f12;"><span style="color:#606771">02:24:47</span><span style="color:#31363d"> | </span><span style="color:#78d090">H:5745 100%</span><span style="color:#ced2d6"> </span><span style="color:#69c9de">M:4060 100%</span><span style="color:#aa79d2"> A:0</span><span style="color:#31363d"> | </span><span style="color:#ced2d6">[</span><span style="color:#dbbd5e">E</span><span style="color:#31363d">|</span><span style="color:#dbbd5e">B</span><span style="color:#31363d">|</span><span style="color:#dbbd5e">W</span><span style="color:#ced2d6">]</span><span style="color:#31363d"> | </span><span style="color:#69c9de">PARRY: RL</span><span style="color:#ced2d6">  </span></div>
+      <div class="meta">
+        BG #0d0f12 &nbsp; Time #606771 &nbsp; HP #78d090 &nbsp; MP #69c9de &nbsp; Age #aa79d2 &nbsp; Ready #dbbd5e
+      </div>
+    </article>
+    
+    <article class="card" data-name="43 ash black">
+      <div class="card-head">
+        <div class="theme-name">43 Ash Black</div>
+        <button onclick='copyTheme("{\"background\": \"#101113\", \"time\": \"#656a70\", \"health\": \"#7bd293\", \"mana\": \"#6bc9dc\", \"age\": \"#ad7bd0\", \"readiness\": \"#ddbf61\", \"separator\": \"#34373b\", \"neutral\": \"#d0d2d5\", \"parry\": \"#6bc9dc\"}", this)'>Copy colors</button>
+      </div>
+      <div class="prompt" style="background:#101113;"><span style="color:#656a70">02:24:47</span><span style="color:#34373b"> | </span><span style="color:#7bd293">H:5745 100%</span><span style="color:#d0d2d5"> </span><span style="color:#6bc9dc">M:4060 100%</span><span style="color:#ad7bd0"> A:0</span><span style="color:#34373b"> | </span><span style="color:#d0d2d5">[</span><span style="color:#ddbf61">E</span><span style="color:#34373b">|</span><span style="color:#ddbf61">B</span><span style="color:#34373b">|</span><span style="color:#ddbf61">W</span><span style="color:#d0d2d5">]</span><span style="color:#34373b"> | </span><span style="color:#6bc9dc">PARRY: RL</span><span style="color:#d0d2d5">  </span></div>
+      <div class="meta">
+        BG #101113 &nbsp; Time #656a70 &nbsp; HP #7bd293 &nbsp; MP #6bc9dc &nbsp; Age #ad7bd0 &nbsp; Ready #ddbf61
+      </div>
+    </article>
+    
+    <article class="card" data-name="44 black ice">
+      <div class="card-head">
+        <div class="theme-name">44 Black Ice</div>
+        <button onclick='copyTheme("{\"background\": \"#0b1014\", \"time\": \"#5c6871\", \"health\": \"#75d093\", \"mana\": \"#61cce4\", \"age\": \"#9f78d5\", \"readiness\": \"#dfbe5e\", \"separator\": \"#2d3940\", \"neutral\": \"#ccd3d7\", \"parry\": \"#61cce4\"}", this)'>Copy colors</button>
+      </div>
+      <div class="prompt" style="background:#0b1014;"><span style="color:#5c6871">02:24:47</span><span style="color:#2d3940"> | </span><span style="color:#75d093">H:5745 100%</span><span style="color:#ccd3d7"> </span><span style="color:#61cce4">M:4060 100%</span><span style="color:#9f78d5"> A:0</span><span style="color:#2d3940"> | </span><span style="color:#ccd3d7">[</span><span style="color:#dfbe5e">E</span><span style="color:#2d3940">|</span><span style="color:#dfbe5e">B</span><span style="color:#2d3940">|</span><span style="color:#dfbe5e">W</span><span style="color:#ccd3d7">]</span><span style="color:#2d3940"> | </span><span style="color:#61cce4">PARRY: RL</span><span style="color:#ccd3d7">  </span></div>
+      <div class="meta">
+        BG #0b1014 &nbsp; Time #5c6871 &nbsp; HP #75d093 &nbsp; MP #61cce4 &nbsp; Age #9f78d5 &nbsp; Ready #dfbe5e
+      </div>
+    </article>
+    
+    <article class="card" data-name="45 night cyan">
+      <div class="card-head">
+        <div class="theme-name">45 Night Cyan</div>
+        <button onclick='copyTheme("{\"background\": \"#081014\", \"time\": \"#587078\", \"health\": \"#70d39a\", \"mana\": \"#58d0dc\", \"age\": \"#9d7bd6\", \"readiness\": \"#dfc05d\", \"separator\": \"#294047\", \"neutral\": \"#cad5d8\", \"parry\": \"#58d0dc\"}", this)'>Copy colors</button>
+      </div>
+      <div class="prompt" style="background:#081014;"><span style="color:#587078">02:24:47</span><span style="color:#294047"> | </span><span style="color:#70d39a">H:5745 100%</span><span style="color:#cad5d8"> </span><span style="color:#58d0dc">M:4060 100%</span><span style="color:#9d7bd6"> A:0</span><span style="color:#294047"> | </span><span style="color:#cad5d8">[</span><span style="color:#dfc05d">E</span><span style="color:#294047">|</span><span style="color:#dfc05d">B</span><span style="color:#294047">|</span><span style="color:#dfc05d">W</span><span style="color:#cad5d8">]</span><span style="color:#294047"> | </span><span style="color:#58d0dc">PARRY: RL</span><span style="color:#cad5d8">  </span></div>
+      <div class="meta">
+        BG #081014 &nbsp; Time #587078 &nbsp; HP #70d39a &nbsp; MP #58d0dc &nbsp; Age #9d7bd6 &nbsp; Ready #dfc05d
+      </div>
+    </article>
+    
+    <article class="card" data-name="46 minimal gray">
+      <div class="card-head">
+        <div class="theme-name">46 Minimal Gray</div>
+        <button onclick='copyTheme("{\"background\": \"#151515\", \"time\": \"#777777\", \"health\": \"#80cf8d\", \"mana\": \"#72c8d7\", \"age\": \"#ac7dcc\", \"readiness\": \"#d8bd64\", \"separator\": \"#444444\", \"neutral\": \"#d3d3d3\", \"parry\": \"#72c8d7\"}", this)'>Copy colors</button>
+      </div>
+      <div class="prompt" style="background:#151515;"><span style="color:#777777">02:24:47</span><span style="color:#444444"> | </span><span style="color:#80cf8d">H:5745 100%</span><span style="color:#d3d3d3"> </span><span style="color:#72c8d7">M:4060 100%</span><span style="color:#ac7dcc"> A:0</span><span style="color:#444444"> | </span><span style="color:#d3d3d3">[</span><span style="color:#d8bd64">E</span><span style="color:#444444">|</span><span style="color:#d8bd64">B</span><span style="color:#444444">|</span><span style="color:#d8bd64">W</span><span style="color:#d3d3d3">]</span><span style="color:#444444"> | </span><span style="color:#72c8d7">PARRY: RL</span><span style="color:#d3d3d3">  </span></div>
+      <div class="meta">
+        BG #151515 &nbsp; Time #777777 &nbsp; HP #80cf8d &nbsp; MP #72c8d7 &nbsp; Age #ac7dcc &nbsp; Ready #d8bd64
+      </div>
+    </article>
+    
+    <article class="card" data-name="47 soft mono">
+      <div class="card-head">
+        <div class="theme-name">47 Soft Mono</div>
+        <button onclick='copyTheme("{\"background\": \"#121416\", \"time\": \"#70777c\", \"health\": \"#93cfa0\", \"mana\": \"#8ac6cf\", \"age\": \"#ae89c4\", \"readiness\": \"#d0bd72\", \"separator\": \"#3d4347\", \"neutral\": \"#d2d5d6\", \"parry\": \"#8ac6cf\"}", this)'>Copy colors</button>
+      </div>
+      <div class="prompt" style="background:#121416;"><span style="color:#70777c">02:24:47</span><span style="color:#3d4347"> | </span><span style="color:#93cfa0">H:5745 100%</span><span style="color:#d2d5d6"> </span><span style="color:#8ac6cf">M:4060 100%</span><span style="color:#ae89c4"> A:0</span><span style="color:#3d4347"> | </span><span style="color:#d2d5d6">[</span><span style="color:#d0bd72">E</span><span style="color:#3d4347">|</span><span style="color:#d0bd72">B</span><span style="color:#3d4347">|</span><span style="color:#d0bd72">W</span><span style="color:#d2d5d6">]</span><span style="color:#3d4347"> | </span><span style="color:#8ac6cf">PARRY: RL</span><span style="color:#d2d5d6">  </span></div>
+      <div class="meta">
+        BG #121416 &nbsp; Time #70777c &nbsp; HP #93cfa0 &nbsp; MP #8ac6cf &nbsp; Age #ae89c4 &nbsp; Ready #d0bd72
+      </div>
+    </article>
+    
+    <article class="card" data-name="48 silver night">
+      <div class="card-head">
+        <div class="theme-name">48 Silver Night</div>
+        <button onclick='copyTheme("{\"background\": \"#16191d\", \"time\": \"#7b838d\", \"health\": \"#86d39a\", \"mana\": \"#77cbdc\", \"age\": \"#b189d2\", \"readiness\": \"#dec16e\", \"separator\": \"#464c55\", \"neutral\": \"#dadee2\", \"parry\": \"#77cbdc\"}", this)'>Copy colors</button>
+      </div>
+      <div class="prompt" style="background:#16191d;"><span style="color:#7b838d">02:24:47</span><span style="color:#464c55"> | </span><span style="color:#86d39a">H:5745 100%</span><span style="color:#dadee2"> </span><span style="color:#77cbdc">M:4060 100%</span><span style="color:#b189d2"> A:0</span><span style="color:#464c55"> | </span><span style="color:#dadee2">[</span><span style="color:#dec16e">E</span><span style="color:#464c55">|</span><span style="color:#dec16e">B</span><span style="color:#464c55">|</span><span style="color:#dec16e">W</span><span style="color:#dadee2">]</span><span style="color:#464c55"> | </span><span style="color:#77cbdc">PARRY: RL</span><span style="color:#dadee2">  </span></div>
+      <div class="meta">
+        BG #16191d &nbsp; Time #7b838d &nbsp; HP #86d39a &nbsp; MP #77cbdc &nbsp; Age #b189d2 &nbsp; Ready #dec16e
+      </div>
+    </article>
+    
+    <article class="card" data-name="49 smoke glass">
+      <div class="card-head">
+        <div class="theme-name">49 Smoke Glass</div>
+        <button onclick='copyTheme("{\"background\": \"#191c20\", \"time\": \"#818993\", \"health\": \"#89d59e\", \"mana\": \"#7bcddd\", \"age\": \"#b78dd3\", \"readiness\": \"#e0c372\", \"separator\": \"#4d535c\", \"neutral\": \"#dce0e4\", \"parry\": \"#7bcddd\"}", this)'>Copy colors</button>
+      </div>
+      <div class="prompt" style="background:#191c20;"><span style="color:#818993">02:24:47</span><span style="color:#4d535c"> | </span><span style="color:#89d59e">H:5745 100%</span><span style="color:#dce0e4"> </span><span style="color:#7bcddd">M:4060 100%</span><span style="color:#b78dd3"> A:0</span><span style="color:#4d535c"> | </span><span style="color:#dce0e4">[</span><span style="color:#e0c372">E</span><span style="color:#4d535c">|</span><span style="color:#e0c372">B</span><span style="color:#4d535c">|</span><span style="color:#e0c372">W</span><span style="color:#dce0e4">]</span><span style="color:#4d535c"> | </span><span style="color:#7bcddd">PARRY: RL</span><span style="color:#dce0e4">  </span></div>
+      <div class="meta">
+        BG #191c20 &nbsp; Time #818993 &nbsp; HP #89d59e &nbsp; MP #7bcddd &nbsp; Age #b78dd3 &nbsp; Ready #e0c372
+      </div>
+    </article>
+    
+    <article class="card" data-name="50 voidwatch signature">
+      <div class="card-head">
+        <div class="theme-name">50 Voidwatch Signature</div>
+        <button onclick='copyTheme("{\"background\": \"#14161b\", \"time\": \"#6e7480\", \"health\": \"#7fd69a\", \"mana\": \"#6fcfe2\", \"age\": \"#b77de0\", \"readiness\": \"#e2c45e\", \"separator\": \"#3e434c\", \"neutral\": \"#d8dbe0\", \"parry\": \"#6fcfe2\"}", this)'>Copy colors</button>
+      </div>
+      <div class="prompt" style="background:#14161b;"><span style="color:#6e7480">02:24:47</span><span style="color:#3e434c"> | </span><span style="color:#7fd69a">H:5745 100%</span><span style="color:#d8dbe0"> </span><span style="color:#6fcfe2">M:4060 100%</span><span style="color:#b77de0"> A:0</span><span style="color:#3e434c"> | </span><span style="color:#d8dbe0">[</span><span style="color:#e2c45e">E</span><span style="color:#3e434c">|</span><span style="color:#e2c45e">B</span><span style="color:#3e434c">|</span><span style="color:#e2c45e">W</span><span style="color:#d8dbe0">]</span><span style="color:#3e434c"> | </span><span style="color:#6fcfe2">PARRY: RL</span><span style="color:#d8dbe0">  </span></div>
+      <div class="meta">
+        BG #14161b &nbsp; Time #6e7480 &nbsp; HP #7fd69a &nbsp; MP #6fcfe2 &nbsp; Age #b77de0 &nbsp; Ready #e2c45e
+      </div>
+    </article>
+    
+</div>
+
+<script>
+function filterCards() {
+  const q = document.getElementById('search').value.toLowerCase().trim();
+  for (const card of document.querySelectorAll('.card')) {
+    const text = card.innerText.toLowerCase();
+    card.style.display = (!q || text.includes(q)) ? '' : 'none';
+  }
+}
+async function copyTheme(payload, btn) {
+  try {
+    await navigator.clipboard.writeText(payload);
+    const old = btn.textContent;
+    btn.textContent = 'Copied';
+    setTimeout(()=>btn.textContent=old, 900);
+  } catch (e) {
+    alert(payload);
+  }
+}
+</script>
+</body>
+</html>
